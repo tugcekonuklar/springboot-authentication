@@ -17,8 +17,8 @@ public class InternalController {
 
     @GetMapping()
     @ResponseStatus(OK)
-    public User getUserInfo(@AuthenticationPrincipal User user) {
-        return user;
+    public String getHello() {
+        return "Hello ";
     }
 
 }
